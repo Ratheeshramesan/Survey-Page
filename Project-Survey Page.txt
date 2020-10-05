@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<meta name="viewport", content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --survey-form-bg:#ff003b;
+    --paragraph-font-size:0.5em;
+    --button-color:#ed1279;
+  }
+  input[type="radio"]{
+    margin:0px 0px 5px 10px;
+  }
+.bgcolor{
+  background-color:#f94349;
+   background-height:500px;
+   background-width: 
+}
+.button-style{
+  display:flex;
+  left:100px;;
+  padding:20px 150px 50px 70px;
+  background-color:#ff9c28;
+  font-size:1.5em;
+  width:50px;
+  height:0px;
+  border:solid 2px;
+  border-radius:10px;
+}
+h1{
+  font-family:Balsamiq Sans;
+  font-size:2em;
+  position:absolute;
+  text-color:#8bbc43;
+  padding-top:0px;
+  padding-left:80px;
+}
+img{
+  display:block;
+position:absolute;
+padding-top:10px;
+z-index:1;
+opacity:1;
+width:80px;
+
+}
+
+p{
+  display:flex;
+justify-content:flex-start;
+  position:relative;
+  top:100px;
+  left:80px;
+   font-family:Yellowtail;
+   font-size:1.5em;
+}
+.surveyformbg{
+      display:block;
+  position:relative;
+  top:80px;
+  background-color:var(--survey-form-bg);
+  background-height:auto;
+  background-width:auto;
+
+}
+.opinion1{
+  display:block;
+  position:relative;
+  top:0px;
+  left:10px;
+  font-family:lucida console;
+  text-align:left;
+  font-size:15px;
+}
+.opinion2{
+  position:relative;
+  top:10px;
+  left:5px;
+font-family:lucida console;
+  text-align:left;
+  font-size:20px;
+}
+.opinion3{
+  display:block;
+  position:relative;
+  top:10px;
+  left:5px;
+font-family:lucida console;
+  text-align:left;
+  font-size:15px;
+}
+.input-area{
+  border:solid 2px;
+  border-radius:10px;
+  background-color:#f8bebd;
+}
+
+.comment{
+  margin-left:0.5px;
+  width:90%;
+  height:50px;
+  border:solid 2px;
+  border-radius:12px;
+  padding:15px 20px 10px 20px;
+  background-color:#ddc2e0;
+}
+.comment2{
+  position:relative;
+  margin-top:80px;
+
+}
+.submit-button{
+  border:solid 2px;
+  border-radius:10px;
+display:block;
+background-color:#6d8fcf;
+left:60px;
+width:70%;
+height:40px;
+text-size:2em;
+margin-left:60px;
+  cursor: pointer;
+}
+.dropdown{
+  position:relative;
+  }
+.dropdown-content {
+display:none;
+position: absolute;
+  background-color:#6ecb34;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0.5, 0.5, 0.5, 0.2);
+  top:50px;
+  left:130px;
+  border:solid 2px;
+  border-radius:10%;
+  text-align:center;
+}
+.dropdown-content a{
+display:block;
+}
+.dropdown-content a:hover{
+background-color:#a73bc4;
+}
+.dropdown-button{
+  background-color:#54ab76;
+margin-top:10px;
+margin-left:150px;
+padding: 8px 32px 10px 40px;
+  text-align: center;
+  border:solid 2px;
+  border-radius:10px;
+  cursor:pointer;
+}
+.dropdown:hover .dropdown-content {
+  display: block; 
+}
+.
+
+
+</style>
+<body style="background-color:#f94349";>
+  <main class="bgcolor">
+  <div>
+  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/180px-Manchester_United_FC_crest.svg.png" alt="Manchester United Crest">
+  </div>
+
+<div>
+<h1 id="title">Manchester United FC Supporter's Survey Form </h1>
+<p id="description">Thankyou for your time taking this survey!</p>
+</div>
+<div>
+<form class="surveyformbg" name="input" action="" id="survey form" >
+<div class="opinion1"><b>Name</b><br> <input type="text" placeholder="Enter your name" size="40"class="input-area"required><br>
+<br>
+<b>Email</b><br><input type="text" size="40"class="input-area"placeholder="Enter a valid email id" required ><br><br>
+<b>Age</b><br><input type="text" size="40" class="input-area"placeholder="Optional" ><br>
+<br>
+<b>Country</b><br>
+<input type="text" size="40"class="input-area"placeholder="Enter your country of residence" required>
+<br><br>
+  <div style="font-size:20px" class="opinion1"><b>(1) According to you,how many new signings are needed?<b> </div><br>
+<br><label for="one" ><input id ="one" type="radio" name="button" value="one">
+1</label>
+<label for="two" ><input id ="two" type="radio" name="button" value="two">
+2</label>
+<label for="three" ><input id ="three" type="radio" name="button" value="three">
+3</label>
+<label ><input id ="four" type="radio" name="button" value="four">
+4 or more</label><br><br>
+<p class="opinion2">(2) Which position(s) should be strengthened? </p>
+<br>
+<label for "fw"><input type="checkbox" id="fw" name="position">Forward</label>
+<label for "mf"><input type="checkbox" id="md" name="position">Midfield</label>
+<label for "df"><input type="checkbox" id="df" name="position">Defence</label>
+<br><br>
+<div class="opinion2">(3) Which of the following player should be signed before the current transfer window? </div><br>
+<div class="dropdown">
+ <button class="dropdown-button">Player</button> 
+<div class="dropdown-content"> 
+    <a href="#">Sancho<a><br>
+    <a href="#">Cavani</a><br>
+    <a href="#">Telles</a><br>
+
+  </div>
+</div>
+
+
+
+<br>
+
+<div class="comment2">Any comments?</div><br>
+<textarea class="comment" placeholder="Enter your comments here..."></textarea><br><br>
+<div>
+  <button type ="submit" class="submit-button">Submit</button>
+</div>
+</form>
+</body>
+</main>
+
